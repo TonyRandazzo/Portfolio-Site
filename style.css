@@ -171,6 +171,7 @@ button:hover span{
     width: auto;
     height: 100%;
   }
+}
 @media (min-aspect-ratio: 9/16){
   .back-video{
     width: 100%;
