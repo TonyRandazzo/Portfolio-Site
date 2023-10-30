@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  font: sans-serif;
+}
+body{
+  background: linear-gradient(#fff, #000);
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.menu-icon{
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+nav ul li a:hover{
+  color: #fff;
+  font-size: 14px;
+}
+nav ul li a::after{
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin: 100px 0;
+}
+.col-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.col-1 h2{
+  font-size: 54px;
+  color: #fff;
+}
+.col-1 h3{
+  font-size: 30px;
+  color: #000;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.col-1 p{
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;
+}
+
+button{
+width: 200px;
+padding: 15px 0;
+text-align: center;
+margin: 20px 10px;
+font-weight: bold;
+border: 3px solid #000;
+background: transparent;
+color: #fff;
+cursor: pointer;
+border-radius: 25px;
+overflow: hidden;
+position: relative;
+}
+span{
+  background: #000;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%
+}
+.col-1::after{
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: #000;
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+.col-2{
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.controller{
+  width: 50%
+}
+
+.social-links img{
+  height: 13px;
+  margin: 20px;
+  cursor: pointer;
+}
+.social-links{
+  text-align: center;
+}
+@media only screen and (max-width:700px) {
+  .menu-icon{
+    display: block;
+  }
+  #menulist{
+    overflow: hidden;
+    transition: 2s;
+  }
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 625px;
+  display: flex;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Studio Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <video loop autoplay muted plays-inline class= "back-video">
+      <source src="Immagini/sfondo1.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <div class="navbar">
+        <img src="Immagini\logo.png" class="logo">
+        <nav>
+         <ul id="menulist">
+          <li><a href="https://itch.io/dashboard" target="_blank">Projects</a></li>
+          <li><a href="#" target="_blank">Contacts</a></li>
+          <li><a href="#" target="_blank">Curriculum Vitae</a></li>
+         </ul>
+       </nav>
+        <img src="Immagini\menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>BIG <br>STUDIO</h2>
+          <h3>Indie Game Developer</h3>
+          <p>Founded by Tony Randazzo</p>
+          <a href="https://itch.io/dashboard" target="_blank"><button type="button"><span></span>View Projects </button></a>
+        </div>
+        <div class="col-2">
+          <img src="Immagini\controller.png" class="controller">
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="http://tiktok.com/@big_studio_" target="_blank"><img src="Immagini\fb.png"></a>
+        <a href="https://x.com/BigaGamesStudio?t=74mwwU7qmx_5lBdO5UB9HQ&s=09" target="_blank"><img src="Immagini\tw.png"></a>
+        <a href="https://instagram.com/_.big_studio._?igshid=eWl4dTg4c3l3MHI=" target="_blank"><img src="Immagini\ig.png"></a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var menulist = document.getElementById("menulist");
+
+      menulist.style.maxHeight = "0px";
+
+      function togglemenu(){
+        if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "30px";
+            }
+          else
+          {
+              menulist.style.maxHeight = "0px";
+          }
+      }
+    </script>
+  </body>
+</html>
