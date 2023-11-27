@@ -1,60 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony Randazzo Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <video loop autoplay muted plays-inline class= "back-video">
-      <source src="Immagini/sfondo1.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <div class="navbar">
-        <img src="Immagini\logo.png" class="logo">
-        <nav>
-         <ul id="menulist">
-          <li><a href="https://www.linkedin.com/in/tony-randazzo-333379297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Contacts</a></li>
-          <li><a href="https://big-studio.itch.io/" target="_blank">Projects</a></li>
-          <li><a href="https://www.linkedin.com/in/tony-randazzo-333379297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">CV</a></li>
-         </ul>
-       </nav>
-        <img src="Immagini\menu.png" class="menu-icon" onclick="togglemenu()">
-      </div>
-      <div class="row">
-        <div class="col-1">
-          <h2>BIG <br>STUDIO</h2>
-          <h3>Indie Game Developer</h3>
-          <p>I'm Tony Randazzo and I publish game as "Big Studio"</p>
-          <a href="https://big-studio.itch.io/" target="_blank"><button type="button"><span></span>View Projects </button></a>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="global">
+        <h1>BIG STUDIO</h1>
+        <h3>by Tony Randazzo</h3>
+        <div class="row">
+            <ul class="col-1">
+                <li>I'm Tony Randazzo and I'm a indie game developer. I studied game development on my own; I started with Construct 2D and Rpg Maker and now I work mainly with Godot Engine 2D and I make the graphics using this same engine, Pixilart, Krita or Paint. I'm also learning Blender and Unreal Engine. I publish games as Big Studio and I'm active on my socials in which I show my projects. </li>
+                <li>I'm also a web designer. I studied a little bit of web design (HTML, CSS and Javascript) through courses on Udemy and I'm studying at Infobasic (PE, Italy) to become a full stack developer MERN.</li>
+                <li>I show interest in more humanistic fields too. Indeed, I have attended the Liceo Classico (humanistic highschool in Italy that gave me the possibility to partecipate on activities about literature and philosophy) and I played the clarinet for almost 7 years in a local clarinet ensemble that led me to do some masters in mainly clarinet classical music.</li>
+                <li>I'm quite good in the english language, indeed I have some certificates that attest my skills such as the B2 Cambridge English Certificate.</li>
+                <div class="social-links">
+                    <a href="" target="_blank"><img src="Immagini\fb.png"></a>
+                    <a href="" target="_blank"><img src="Immagini\tw.png"></a>
+                    <a href="" target="_blank"><img src="Immagini\ig.png"></a>
+                </div>
+            </ul>
+            <div class="col-2">
+                <img src="Immagini\controller.png" alt="" class="logo">
+            </div>
         </div>
-        <div class="col-2">
-          <img src="Immagini\controller.png" class="controller">
-          <div class="color-box"></div>
-        </div>
-      </div>
-      <div class="social-links">
-        <a href="" target="_blank"><img src="Immagini\fb.png"></a>
-        <a href="" target="_blank"><img src="Immagini\tw.png"></a>
-        <a href="" target="_blank"><img src="Immagini\ig.png"></a>
-      </div>
     </div>
-    <script type="text/javascript">
-      var menulist = document.getElementById("menulist");
 
-      menulist.style.maxHeight = "0px";
-
-      function togglemenu(){
-        if(menulist.style.maxHeight == "0px")
-            {
-                menulist.style.maxHeight = "30px";
-            }
-          else
-          {
-              menulist.style.maxHeight = "0px";
-          }
-      }
-    </script>
-  </body>
+</body>
 </html>
