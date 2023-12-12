@@ -7,7 +7,9 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <img src="" alt="" class = "gif">
+    <video id="video-background" autoplay muted loop>
+        <source src="Immagini/sfondo1.mp4" type="video/mp4">
+    </video>
     <div class="global">
         <h1>BIG STUDIO</h1>
         <h3>by Tony Randazzo</h3>
@@ -17,14 +19,34 @@
                 <li>I'm also a web designer. I studied a little bit of web design (HTML, CSS and Javascript) through courses on Udemy and I'm studying at Infobasic (PE, Italy) to become a full stack developer MERN.</li>
                 <li>I show interest in more humanistic fields too. Indeed, I have attended the Liceo Classico (humanistic highschool in Italy that gave me the possibility to partecipate on activities about literature and philosophy) and I played the clarinet for almost 7 years in a local clarinet ensemble that led me to do some masters in mainly clarinet classical music.</li>
                 <li>I'm quite good in the english language, indeed I have some certificates that attest my skills such as the B2 Cambridge English Certificate.</li>
-                <div class="social-links">
+                <!-- <div class="social-links">
                     <a href="" target="_blank"><img src="Immagini\fb.png"></a>
                     <a href="" target="_blank"><img src="Immagini\tw.png"></a>
                     <a href="" target="_blank"><img src="Immagini\ig.png"></a>
-                </div>
+                </div> -->
             </ul>
             <div class="col-2">
                 <img src="Immagini\controller.png" alt="" class="logo">
+                <div class="progress-bar-container">
+                    <div class="progress-bars-container">
+                        <div class="progress-bar html">
+                            <h2>
+                                <label for="html">Front-End</label>
+                              </h2>
+                            <progress id="html" min="0" max="100" value="92"></progress>
+                        </div>
+                        <div class="progress-bar css">
+                            <h2>
+                                <label for="css">Back-End</label>
+                              </h2>
+                            <progress id="css" min="0" max="100" value="60"></progress>
+                        </div>
+                        <div class="progress-bar js">
+                            <h2>
+                                <label for="js">GameDev</label>
+                            </h2>
+                            <progress id="js" min="0" max="100" value="80"></progress>
+                  </div>
             </div>
         </div>
     </div>
