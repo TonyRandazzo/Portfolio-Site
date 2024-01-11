@@ -42,7 +42,7 @@ body {
 
 
 .logo {
-    margin-top: 1200px;
+    margin-top: 400px;
     width: 300px; 
     height: auto; 
     margin-bottom: 50px; 
@@ -459,6 +459,7 @@ h1 {
   transition: transform 0.3s ease-in-out;
 }
 
+
 .Projects img:hover {
   transform: scale(1.1); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -481,4 +482,13 @@ h1 {
 .Projects li:hover .image-overlay {
   display: block;
   opacity: 1;
+}
+.Projects {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.button-expanded .Projects {
+  max-height: 500px; 
 }

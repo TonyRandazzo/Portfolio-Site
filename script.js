@@ -37,4 +37,16 @@ barElements.forEach(bar => {
     bar.parentNode.insertBefore(text, bar);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll("button");
 
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            buttons.forEach(function (b) {
+                b.parentNode.classList.remove("button-expanded");
+            });
+
+            this.parentNode.classList.add("button-expanded");
+        });
+    });
+});
