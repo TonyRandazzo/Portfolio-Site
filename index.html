@@ -3,53 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Immagini/controller.png">
 </head>
 <body>
     <video id="video-background" autoplay muted loop>
         <source src="Immagini/sfondo1.mp4" type="video/mp4">
     </video>
-    <div class="global">
-        <h1>BIG STUDIO</h1>
-        <h3>by Tony Randazzo</h3>
-        <div class="row">
-            <ul class="col-1">
-                <li>I'm Tony Randazzo and I'm a indie game developer. I studied game development on my own; I started with Construct 2D and Rpg Maker and now I work mainly with Godot Engine 2D and I make the graphics using this same engine, Pixilart, Krita or Paint. I'm also learning Blender and Unreal Engine. I publish games as Big Studio and I'm active on my socials in which I show my projects. </li>
-                <li>I'm also a web designer. I studied a little bit of web design (HTML, CSS and Javascript) through courses on Udemy and I'm studying at Infobasic (PE, Italy) to become a full stack developer MERN.</li>
-                <li>I show interest in more humanistic fields too. Indeed, I have attended the Liceo Classico (humanistic highschool in Italy that gave me the possibility to partecipate on activities about literature and philosophy) and I played the clarinet for almost 7 years in a local clarinet ensemble that led me to do some masters in mainly clarinet classical music.</li>
-                <li>I'm quite good in the english language, indeed I have some certificates that attest my skills such as the B2 Cambridge English Certificate.</li>
-                <!-- <div class="social-links">
-                    <a href="" target="_blank"><img src="Immagini\fb.png"></a>
-                    <a href="" target="_blank"><img src="Immagini\tw.png"></a>
-                    <a href="" target="_blank"><img src="Immagini\ig.png"></a>
-                </div> -->
-            </ul>
-            <div class="col-2">
-                <img src="Immagini\controller.png" alt="" class="logo">
-                <div class="progress-bar-container">
-                    <div class="progress-bars-container">
-                        <div class="progress-bar html">
-                            <h2>
-                                <label for="html">Front-End</label>
-                              </h2>
-                            <progress id="html" min="0" max="100" value="92"></progress>
-                        </div>
-                        <div class="progress-bar css">
-                            <h2>
-                                <label for="css">Back-End</label>
-                              </h2>
-                            <progress id="css" min="0" max="100" value="60"></progress>
-                        </div>
-                        <div class="progress-bar js">
-                            <h2>
-                                <label for="js">GameDev</label>
-                            </h2>
-                            <progress id="js" min="0" max="100" value="80"></progress>
-                  </div>
-            </div>
+    <div class="front-row">
+        <h1 class="titolo">Tony Randazzo Portfolio</h1>
+        <img src="Immagini/controller.png" alt="" class="logo">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="Immagini/Business Card.png" target="_blank">About me</a></li>
+                    <li><a href="Immagini/Curriculum.pdf" target="_blank">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bars-container">
+                <div class="progress-bar FrontEnd">
+                    <h2>
+                        <label for="FrontEnd"><a href="#Front-End">Front-End</a></label>
+                      </h2>
+                    <progress id="FrontEnd" min="0" max="100" value="80"></progress>
+                </div>
+                <div class="progress-bar BackEnd">
+                    <h2>
+                        <label for="BackEnd"><a href="#Back-End">Back-End</a></label>
+                      </h2>
+                    <progress id="BackEnd" min="0" max="100" value="60"></progress>
+                </div>
+                <div class="progress-bar GameDev">
+                    <h2>
+                        <label for="GameDev"><a href="#Game Dev">GameDev</a></label>
+                    </h2>
+                    <progress id="GameDev" min="0" max="100" value="80"></progress>
+          </div>
         </div>
     </div>
-
+    <div class="elements">
+        <ul>
+            <li><h1 id="Front-End" class="animated-h1">Front-End </h1><p>About the Front-End, as far as is HTML and CSS concerned, I am mostly self-tought via Youtube, Udemy and practice. Then, I attended a Full Stack Developer Course in wich I learned Javscript and the DOM.</p>
+                <button><span></span>View Projects</button>
+                <div class="Projects">
+                  <ul>
+                    <li>
+                      <img src="https://m.media-amazon.com/images/I/61VaxmPIrGL._AC_UF1000,1000_QL80_.jpg">
+                      <img src="Immagini/controller.png" alt="">
+                      <img src="Immagini/square.jpg" alt="">
+                  </li>
+                </ul>
+                </div>
+                <div class="html-bar">
+                    <div class="html">80%</div>
+                  </div>
+                  <div class="css-bar">
+                    <div class="css" >70%</div>
+                  </div>
+                  <div class="js-bar">
+                    <div class="js" >70%</div>
+                  </div>
+                  </li>
+            <li><h1 id="Back-End" class="animated-h1">Back-End </h1><p>I learned the Back-End in a Full Stack Developer Course at Infobasic. I know how to use PHP and MySql, especially to organize a management.</p>
+                <button><span></span>View Projects</button>
+                <div class="Projects">
+                  <ul>
+                    <li>
+                      <img src="Immagini/square.jpg" alt="">
+                      <img src="Immagini/square.jpg" alt="">
+                      <img src="Immagini/square.jpg" alt="">
+                  </li>
+                </ul>
+                <div class="php-bar">
+                    <div class="php">60%</div>
+                  </div>
+                  <div class="mySQL-bar">
+                    <div class="mySQL" >60%</div>
+                  </div>
+                  </li>
+            <li><h1 id="Game Dev" class="animated-h1">Game Dev </h1><p>I'm self-tought on this field. I practiced on Unreal Engine, Construct 2, Godot Engine and RPG Maker almost five years ago for at least two years. Right now, I mostly use Godot Engine and I have been using this Engine for like six years.</p>
+                <button><span></span>View Projects</button>
+                <div class="Projects">
+                  <ul>
+                    <li>
+                      <img src="Immagini/square.jpg" alt="">
+                      <img src="Immagini/square.jpg" alt="">
+                      <img src="Immagini/square.jpg" alt="">
+                  </li>
+                </ul>
+                <div class="Godot-bar">
+                    <div class="Godot">90%</div>
+                  </div>
+                  <div class="UE-bar">
+                    <div class="UE" >50%</div>
+                  </div>
+                  <div class="Blender-bar">
+                    <div class="Blender" >40%</div>
+                  </div>
+                  </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
