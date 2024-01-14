@@ -541,16 +541,31 @@ h1 {
       width: 100%;
       margin-top: 10px;
   }
+  .html {
+    width: 80%;
+  
+  }
+  .css {
+    width: 70%;
 
-  .html,
-  .css,
-  .js,
-  .php,
-  .mySQL,
-  .Godot,
-  .UE,
+  }
+  .js {
+  width: 70%;
+  }
+  .php {
+  width: 60%;
+  }
+  .mySQL {
+  width: 60%;
+  }
+  .Godot {
+  width: 90%;
+  }
+  .UE {
+  width: 50%;
+  }
   .Blender {
-      width: 100%;
+  width: 40%;
   }
 
   .Projects img {
@@ -582,4 +597,6 @@ h1 {
 .progress-bar h2 {
     font-size: 10px; 
 }
+
+
 }
