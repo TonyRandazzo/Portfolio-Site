@@ -7,11 +7,9 @@ function addFadeInAnimation(elementId) {
     }, 1000);
 }
 
-// Seleziona i pulsanti "up" per ciascuna sezione e aggiungi l'evento di click
-const upButtons = document.querySelectorAll('a[href="#Front-End"], a[href="#Back-End"], a[href="#Game Dev"]');
+const upButtons = document.querySelectorAll('a[href="#Front-End"], a[href="#Back-End"], a[href="#Game-Dev"]');
 upButtons.forEach((button) => {
     button.addEventListener('click', function(event) {
-        // Ottieni l'ID dell'elemento corrispondente al pulsante cliccato
         const sectionId = event.target.getAttribute('href');
         addFadeInAnimation(sectionId);
     });
