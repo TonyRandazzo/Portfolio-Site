@@ -35,7 +35,7 @@ function Body() {
           </div>
           <div className='cards'>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top"  src={Portfolio} />
+            <a href='#' target="_blank"><Card.Img variant="top"  src={Portfolio} /></a>
             <Card.Body>
               <Card.Title>This Portfolio</Card.Title>
               <Card.Text>
@@ -44,7 +44,7 @@ function Body() {
             </Card.Body>
           </Card>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61VaxmPIrGL._AC_UF1000,1000_QL80_.jpg" />
+            <a href='https://tonyrandazzo.github.io/VietnamWar---Lavoro-CLIL-main/' target='_blank'><Card.Img variant="top" src="https://m.media-amazon.com/images/I/61VaxmPIrGL._AC_UF1000,1000_QL80_.jpg" /></a>
             <Card.Body>
               <Card.Title>Vietnam War Highschool Project</Card.Title>
               <Card.Text>
@@ -53,7 +53,7 @@ function Body() {
             </Card.Body>
           </Card>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61BRwWBPKfL.png" />
+            <a href='https://tonyrandazzo.github.io/Guess-The-Number/' target='_blank'><Card.Img variant="top" src="https://m.media-amazon.com/images/I/61BRwWBPKfL.png" /></a>
             <Card.Body>
               <Card.Title>Simple Game Guess The Number</Card.Title>
               <Card.Text>
@@ -85,7 +85,7 @@ function Body() {
             <p className="description">This is a project I made using plain PHP.</p>
             <div className='cards'>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" />
+            <a href='https://tonyrandazzo.github.io/Business-Management-Form/' target='_blank'><Card.Img variant="top" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" /></a>
             <Card.Body>
               <Card.Title>Simple Management Form</Card.Title>
               <Card.Text>
@@ -113,7 +113,7 @@ function Body() {
             <p className="description">These are projects I made using Godot Engine.</p>
             <div className='cards'>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://static-00.iconduck.com/assets.00/itch-io-icon-2048x2048-i6hzclad.png" />
+            <a href='https://big-studio.itch.io/' target='_blank'><Card.Img variant="top" src="https://static-00.iconduck.com/assets.00/itch-io-icon-2048x2048-i6hzclad.png" /></a>
             <Card.Body>
               <Card.Title>Itch.io</Card.Title>
               <Card.Text>
