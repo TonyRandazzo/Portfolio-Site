@@ -48,7 +48,7 @@ function Body() {
             <Card.Body>
               <Card.Title>Vietnam War Highschool Project</Card.Title>
               <Card.Text>
-              This was my first work done with HTML and CSS. In this project, we had to talk about the Vietnam War focusing on more social aspects and every member of the group had to focus on a particular subject. I did the website and the introduction to this project.
+              This was my first work done with HTML and CSS after a course with Udemy. In this project, we had to talk about the Vietnam War focusing on more social aspects and every member of the group had to focus on a particular subject. I did the website and the introduction to this project.
               </Card.Text>
             </Card.Body>
           </Card>
