@@ -8,7 +8,6 @@ body{
 
   
 .landingPage{
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,16 +15,31 @@ body{
 }
 
 .titolo{
+  margin-top: 50px;
   font-size:60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: entrance 1s ease-in-out forwards;
 }
 .foto{
+  margin-top: 50px;
   height: 200px;
   border-radius: 80%;
   background-image: linear-gradient(45deg, grey, darkgray, gainsboro);
   padding: 5px;
+  animation: entrance 1s ease-in-out forwards;
+}
+
+@keyframes entrance {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); 
+}
+to {
+    opacity: 1;
+    transform: translateY(0); 
+}
 }
 .content {
   display: flex;
@@ -38,9 +52,11 @@ body{
 .aboutMe{
 margin-left: 0;
 margin-right: 150px;
+animation: entrance 2s ease-in-out forwards;
+
 }
 .aboutMe h2{
-  padding: 20px;
+  padding: 10px;
 }
 .aboutMe p{
   text-align: justify;
@@ -51,7 +67,7 @@ margin-right: 150px;
   border-right: .15em solid black; 
   white-space: nowrap; 
   margin: 0;
-  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+  animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
 }
 .bouncing-text {
   animation: bounceIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards, stretch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards infinite, float 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s forwards infinite;
@@ -131,7 +147,7 @@ margin-right: 150px;
   position: fixed;
   top: 0;  
   z-index: 9999;
-  background: grey;
+  background: black;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -175,6 +191,13 @@ nav ul {
 }
 
 .projects{
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 300px;
+  background: linear-gradient(180deg, whitesmoke, gainsboro, darkgray, #333);
   padding-left: 40px;
   margin-top: 50px;
 }
@@ -185,9 +208,13 @@ nav ul {
   overflow-x: scroll;
   padding: 10px;
   gap: 50px;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  overflow-y: hidden;
+  /* scrollbar-width: none; 
+  -ms-overflow-style: none;  */
+  scrollbar-width: thin;
+  scrollbar-color: black gainsboro; 
 }
+
 
 .item {
   position: relative;
@@ -198,9 +225,10 @@ nav ul {
   transform: scale(1.2);
 }
 .item img {
+  border: 1px solid darkgray;
   display: block;
   width: 300px; 
-  height: auto;
+  height: 200px;
 }
 
 .overlay {
@@ -210,8 +238,9 @@ nav ul {
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  text-align: center;
-  padding: 10px;
+  text-align: justify;
+  padding: 20px;
+  padding-left: 30px;
   opacity: 0;
   transition: opacity 0.3s ease;
   font-size: 10px;
@@ -222,6 +251,7 @@ nav ul {
 }
 
 .description {
+  box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
   margin-left: 100px;
   border-radius: 30px;
   background: linear-gradient(30deg, whitesmoke, rgb(218, 218, 218), gainsboro);
@@ -290,61 +320,19 @@ nav ul {
   transition-delay: 0.6s;
 }
 
-
-@media (min-width: 1024px) {
-  .landingPage {
-    margin-top: 100px;
-  }
+.footer{
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-@media (max-width: 1023px) {
-  .landingPage {
-    margin-top: 80px;
-  }
+.footer-container{
+  max-width: 1200px;
+  margin:  0 auto;
 }
 
-@media (max-width: 768px) {
-  .landingPage {
-    margin-top: 60px;
-  }
-  .col {
-    margin: 0 50px;
-    font-size: 20px;
-  }
-  .foto {
-    height: 150px;
-  }
-  .item img {
-    width: 250px;
-  }
-  .description {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 80%;
-  }
-  .description.left {
-    margin-right: 0;
-  }
-  .description.right {
-    margin-left: 0;
-  }
-}
 
-@media (max-width: 576px) {
-  .landingPage {
-    margin-top: 40px;
-  }
-  .foto {
-    height: 120px;
-  }
-  .item img {
-    width: 200px;
-  }
-  .description {
-    padding: 20px;
-    width: 90%;
-  }
-  .description.left, .description.right {
-    margin: 0;
-  }
-}
